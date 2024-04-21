@@ -1,4 +1,4 @@
-public class Basquete extends Atleta{
+public class AtletaBasquete extends Atleta{
 
     private int pontosDeTres;
     private int pontosDeDois;
@@ -16,9 +16,9 @@ public class Basquete extends Atleta{
         this.pontosDeDois = pontosDeDois;
     }
     
-    public Basquete() { }
+    public AtletaBasquete() { }
     
-    public Basquete(String nome, int idade, String time, int pontosDeTres, int pontosDeDois) {
+    public AtletaBasquete(String nome, int idade, String time, int pontosDeTres, int pontosDeDois) {
         super(nome, idade, time);
         this.pontosDeTres = pontosDeTres;
         this.pontosDeDois = pontosDeDois;

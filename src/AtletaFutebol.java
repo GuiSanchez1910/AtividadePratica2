@@ -1,4 +1,4 @@
-public class Futebol extends Atleta {
+public class AtletaFutebol extends Atleta {
 
     private int gols;
     private int asssistencias;
@@ -16,9 +16,9 @@ public class Futebol extends Atleta {
         this.asssistencias = asssistencias;
     }
     
-    public Futebol() { }
+    public AtletaFutebol() { }
 
-    public Futebol(String nome, int idade, String time, int gols, int asssistencias) {
+    public AtletaFutebol(String nome, int idade, String time, int gols, int asssistencias) {
         super(nome, idade, time);
         this.gols = gols;
         this.asssistencias = asssistencias;

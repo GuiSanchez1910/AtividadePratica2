@@ -18,7 +18,7 @@ public class CadastrarAtleta {
         List<Atleta> tempListF = new ArrayList<>();
 
         for (Atleta temp : listaAtletas) {
-            if(temp instanceof Futebol) {
+            if(temp instanceof AtletaFutebol) {
                 tempListF.add(temp);
             }
         }
@@ -30,21 +30,21 @@ public class CadastrarAtleta {
 
         List<Atleta> tempListB = new ArrayList<>();
 
-        for (Atleta temp : tempListB) {
-            if(temp instanceof Basquete) {
+        for (Atleta temp : listaAtletas) {
+            if(temp instanceof AtletaBasquete) {
                 tempListB.add(temp);
             }
         }
 
-        return listaAtletas;
+        return tempListB;
     }
 
     public static List<Atleta> getVolei() {
 
         List<Atleta> tempListV = new ArrayList<>();
 
-        for (Atleta temp : tempListV) {
-            if(temp instanceof Volei) {
+        for (Atleta temp : listaAtletas) {
+            if(temp instanceof AtletaVolei) {
                 tempListV.add(temp);
             }
         }
@@ -52,10 +52,18 @@ public class CadastrarAtleta {
         return tempListV;
     }
 
+    public static boolean excluirTodos() {
+        if (listaAtletas.isEmpty()) {
+            return false;
+        }
+        listaAtletas.clear();
+        return true;
+    }
+
     public static boolean excluir(String nome) {
 
         for (Atleta temp : listaAtletas) {
-            if(temp.getNome() == nome) {
+            if(temp.getNome().equals(nome)) {
                 listaAtletas.remove(temp);
                 return true;
             }

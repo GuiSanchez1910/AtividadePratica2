@@ -33,7 +33,7 @@ public class Atleta {
              
     @Override
     public String toString() {
-        String txt = "Nome: " + nome + "\nIdade: " + idade + "\nTime: " + time;
+        String txt = "\nNome: " + nome + "\nIdade: " + idade + "\nTime: " + time;
         return txt;
     }
 }
